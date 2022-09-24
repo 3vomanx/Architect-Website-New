@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Gehry's Projects</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="../js/detail.js"></script>
+</head>
+<body>
+    <nav class="">
+        <div class="menu">
+            <div class="logo">
+                <a href="../home.html">Logo Space</a>
+        </div>
+            <ul>
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PROJECTS</a></li>
+            </ul>
+            <ion-icon name="moon-outline" class="switch"></ion-icon>
+        </div>
+    </nav>
+        <div class="backgroundimg"></div>
+            <div class="slider"></div>
+                <div class="detail_info_desk">
+                    <div class="title">
+                        <div class="detail_title">
+                            <div class="line1"></div>
+                                <p>Details</p>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                        <div id="Building_name">
+                            <ul>
+                                <li>Building Name:</li>
+                                <p id="name"></p>
+                            </ul>
+                        </div>
+                            <div id="Building_architect">
+                                <ul>
+                                    <li>Building Architect:</li>
+                                    <p id="architect"></p> 
+                                </ul>
+                            </div>
+                                <div id="Building_location">
+                                    <ul>
+                                        <li>Building Location:</li>
+                                        <p id="location"></p> 
+                                    </ul>
+                                </div>
+                                    <div id="Building_address">
+                                        <ul>
+                                            <li>Building Address:</li>
+                                            <p id="address"></p>
+                                        </ul>
+                                    </div>
+                </div>
+        <script>    
+            document.getElementById('name').innerHTML = details.name
+            document.getElementById('architect').innerHTML = details.architect
+            document.getElementById('location').innerHTML = details.location 
+            document.getElementById('address').innerHTML = details.address
+        </script>
+</body>
+</html>
